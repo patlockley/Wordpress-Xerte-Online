@@ -5,7 +5,7 @@ Requires at least: 3
 Tested up to: 3.3
 Stable tag: 0.1
 
-Xerte Online Toolkits is a server-based suite of tools for content authors. Elearning materials can be authored quickly and easily using browser-based tools, with no programming required. Xerte Online Toolkits is aimed at content authors, who will assemble content using simple wizards. Content authors can easily collaborate on projects. Xerte Online Toolktis can be extended by developers using Xerte.
+Xerte Online for WordPress is a server-based suite of tools for content authors. Elearning materials can be authored quickly and easily using browser-based tools, with no programming required. Xerte Online Toolkits is aimed at content authors, who will assemble content using simple wizards. Content authors can easily collaborate on projects. Xerte Online Toolktis can be extended by developers using Xerte.
 
 This plugin for WordPress is a subset of the main Xerte Online Toolkits functionality, but offers a simple to install and host solution within WordPress. More information on Xerte Online Toolkits
 
@@ -13,7 +13,7 @@ Xerte was developed by the University of Nottingham, and for more information pl
 
 == Description ==
 
-Xerte Online Toolkits is a server-based suite of tools for content authors. Elearning materials can be authored quickly and easily using browser-based tools, with no programming required. Xerte Online Toolkits is aimed at content authors, who will assemble content using simple wizards. Content authors can easily collaborate on projects. Xerte Online Toolktis can be extended by developers using Xerte.
+Xerte Online for WordPress is a server-based suite of tools for content authors. Elearning materials can be authored quickly and easily using browser-based tools, with no programming required. Xerte Online Toolkits is aimed at content authors, who will assemble content using simple wizards. Content authors can easily collaborate on projects. Xerte Online Toolktis can be extended by developers using Xerte.
 
 This plugin for WordPress is a subset of the main Xerte Online Toolkits functionality, but offers a simple to install and host solution within WordPress. More information on Xerte Online Toolkits
 
