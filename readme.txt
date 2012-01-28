@@ -17,7 +17,9 @@ Xerte Online for WordPress is a server-based suite of tools for content authors.
 
 This plugin for WordPress is a subset of the main Xerte Online Toolkits functionality, but offers a simple to install and host solution within WordPress. More information on Xerte Online Toolkits
 
-Xerte was developed by the University of Nottingham, and for more information please visit Xerte home page. This plugin was not developed by the University, but by part of the Xerte Community
+Xerte was developed by the University of Nottingham, and for more information please visit <a href="http://www.nottingham.ac.uk/xerte">Xerte home page</a>. This plugin was not developed by the University, but by part of the Xerte Community
+
+This plugin is very much in development. Please report problems to http://www.pgogy.com/code/xerte-online/
 
 == Installation ==
 
