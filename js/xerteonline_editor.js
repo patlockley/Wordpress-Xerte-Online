@@ -10,6 +10,15 @@ jQuery(document).ready(function(){
 			return false;
 		}
 	});
+	jQuery('#save-post').click(function(){
+		var savepostConfirmPublish = confirm('Have you "Play"ed or "Publish"ed your Xerte Content ?\n\n Press \'OK\' to publish. Press \'cancel\' to go back and continue editing.');
+		if(savepostConfirmPublish){
+			return true;
+		}
+		else{
+			return false;
+		}
+	});
 	jQuery('#update').click(function(){
 		var updateConfirmPublish = confirm('Have you "Play"ed or "Publish"ed your Xerte Content ?\n\n Press \'OK\' to publish. Press \'cancel\' to go back and continue editing.');
 		if(updateConfirmPublish){
