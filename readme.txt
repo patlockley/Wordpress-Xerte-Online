@@ -1,9 +1,9 @@
 === Plugin Name ===
 Contributors: pgogy
 Tags: elearning, learning, education, content creation, xerte
-Requires at least: 3
+Requires at least: 3.1
 Tested up to: 3.3
-Stable tag: 0.1
+Stable tag: 0.11
 
 Xerte Online for WordPress is a server-based suite of tools for content authors. Elearning materials can be authored quickly and easily using browser-based tools, with no programming required. Xerte Online Toolkits is aimed at content authors, who will assemble content using simple wizards. Content authors can easily collaborate on projects. Xerte Online Toolktis can be extended by developers using Xerte.
 
@@ -40,6 +40,10 @@ No Questions have been asked yet. Please see http://www.pgogy.com/code/xerte-onl
 6. The Xerte Project homepage - http://www.nottingham.ac.uk/xerte
 
 == Changelog ==
+
+= 0.2 =
+Some installation problems resolved
+http://www.pgogy.com/code/xerte-online/
 
 = 0.1 =
 First version released. Still a development version. I expect it to work, but problems may occur. Please report to http://www.pgogy.com/code/xerte-online/
