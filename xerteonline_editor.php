@@ -61,7 +61,7 @@ function xerteonlinewordpress_editor(){
 	
 	if($_GET['post']!=""){
 	
-		echo "<p><strong>Iframe code</strong> : The iframe to embed this piece is &lt;iframe src=\"" . site_url() . "/?xerte_online=" . $post->post_name . "\" width='1020' height='740' /&gt;</p>";
+		echo "<p><strong>Iframe code</strong> : The iframe to embed this piece is &lt;iframe src=\"" . site_url() . "/?xerte_online=" . $post->post_title . "\" width='1020' height='740' /&gt;</p>";
 		echo "<p><strong>WordPress Shortcode</strong> : The shortcode to embed this piece is [xerte-online post=\"" . $_GET['post'] . "\"]</p>";
 	
 	}else{

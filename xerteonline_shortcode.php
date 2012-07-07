@@ -1,9 +1,11 @@
 <?PHP
 
 	function xerteonline_shortcode( $atts ) {		
+	
+		$post = get_post($atts['post']);
 
 		?>
-		<iframe src="?p=<?PHP echo $atts['post']; ?>" width="1020" height="740"></iframe>
+		<iframe src="<?PHP echo site_url(); ?>/?xerte_online=<?PHP echo $post->post_title; ?>" width="1020" height="740"></iframe>
 		<?PHP
 		
 	}

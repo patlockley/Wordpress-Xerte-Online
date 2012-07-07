@@ -3,7 +3,7 @@
 	/*
 	Plugin Name: Xerte Online 
 	Description: Xerte Online Toolkits based in a WordPress site
-	Version: 0.2
+	Version: 0.32
 	Author: pgogy
 	Plugin URI: http://www.pgogy.com/code/xerte-online
 	Author URI: http://www.pgogy.com
@@ -73,6 +73,8 @@
 				wp_die("MKDIR for the languages folder failed");
 			
 			}
+			
+			chmod("../languages",0744);
 		
 		}
 		
@@ -87,6 +89,8 @@
 					wp_die($file . " did not copy");
 		
 				}
+				
+				chmod("../languages/" . $file,0744);
 			
 			}
 		

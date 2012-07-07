@@ -20,6 +20,14 @@ add_action('admin_menu', 'xerteonline_menu_option');
 		<p>This plugin brings in a slightly reduced subset of the pages available for a Xerte Online Toolkits example - <a href="http://www.nottingham.ac.uk/toolkits/play_560">this example shows all pages</a>. The plugin uses a WordPress feature to allow a Xerte learning object to be created in the same way you might make a <a href="post-new.php?post_type=xerte_online">WordPress post or page</a>. Information on how you can use the created learning objects is provided for you when you're creating a learning object.</p>
 		<p>An RSS Feed is available for just your published Xerte Learning Objects - <a href="<?PHP echo site_url(); ?>/?feed=xofeed">Xerte RSS Feed</a>. You might want to submit this to <a href="http://www.nottingham.ac.uk/xpert">Xpert</a></p>		
 		<p>For guidance on how to use make Xerte Learning Objects then please see the <a href="admin.php?page=xerte_online_guidance">Xerte training materials</a></p>
+		<h2>Using Xerte Learning Objects in this blog</h2>
+		<p>Each Xerte Learning Object created with this plugin will have its own URL which can be added manually to posts or sent out to people.</p>
+		<p>Or one of the following is an option
+			<ol>
+				<li>Iframe code - available underneath each post when being editted</li>
+				<li>WordPress Shortcode - available underneath each post when being editted</li>
+			</ol> 
+		</p>
 		<?PHP
 	
 	}
