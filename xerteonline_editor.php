@@ -44,6 +44,7 @@ function xerteonlinewordpress_editor(){
 									 &read_and_write=true
 									 &savepath=../wp-content/plugins/xerte-online/xertefiles/save.php
 									 &upload_path=upload.php?path=
+									 &wpnonce=<?PHP echo wp_create_nonce  ('xertesave'); ?>
 									 &preview_path=../wp-content/plugins/xerte-online/xertefiles/file_exists.php
 									 &site_url=<?PHP echo network_site_url(); ?>" />
 		<EMBED 
@@ -54,7 +55,7 @@ function xerteonlinewordpress_editor(){
 			LOOP="true" 
 			QUALITY="best" 
 			PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
-			FlashVars="wordpress=true&xmlvariable=../wp-content/uploads/xerte-online/<?PHP echo $post->ID;?>/preview.xml&rlovariable=../wp-content/uploads/xerte-online/<?PHP echo $post->ID;?>/&originalpathvariable=../wp-content/plugins/xerte-online/xertefiles/template/&template_id=<?PHP echo $post->ID; ?>&template_height=600&template_width=800&read_and_write=true&savepath=../wp-content/plugins/xerte-online/xertefiles/save.php&upload_path=upload.php?path=&preview_path=../wp-content/plugins/xerte-online/xertefiles/file_exists.php&site_url=<?PHP echo network_site_url(); ?>" >
+			FlashVars="wordpress=true&xmlvariable=../wp-content/uploads/xerte-online/<?PHP echo $post->ID;?>/preview.xml&rlovariable=../wp-content/uploads/xerte-online/<?PHP echo $post->ID;?>/&originalpathvariable=../wp-content/plugins/xerte-online/xertefiles/template/&template_id=<?PHP echo $post->ID; ?>&template_height=600&template_width=800&read_and_write=true&savepath=../wp-content/plugins/xerte-online/xertefiles/save.php&upload_path=upload.php?path=&preview_path=../wp-content/plugins/xerte-online/xertefiles/file_exists.php&wpnonce=<?PHP echo wp_create_nonce  ('xertesave'); ?>&site_url=<?PHP echo network_site_url(); ?>" >
 		</EMBED>
 	</OBJECT>
 	<?PHP 
