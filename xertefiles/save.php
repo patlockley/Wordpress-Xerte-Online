@@ -11,13 +11,7 @@
  
 include "../../../../wp-admin/admin.php";
 
-if(substr(trim($_POST['filedata']),0,15)!="<learningObject"){
-
-	file_put_contents("c:\\xampp\\rrrr.txt", substr(trim($_POST['filedata']),0,15) . "**" .  "<learningObject" . "**"); 
-
-	die("INVALID FILE DATA");
-
-}
+// check the nonce is correct 
  
 if(! wp_verify_nonce($_POST['wpnonce'],"xertesave")){
 	
@@ -25,11 +19,25 @@ if(! wp_verify_nonce($_POST['wpnonce'],"xertesave")){
 
 }
 
+//Check to see the filedata begins with the correct start
+
+if(substr(trim($_POST['filedata']),0,15)!="<learningObject"){
+
+	file_put_contents("c:\\xampp\\rrrr.txt", substr(trim($_POST['filedata']),0,15) . "**" .  "<learningObject" . "**"); 
+
+	die("INVALID FILE DATA");
+
+}
+
+// check the post data is set ok
+
  if(!isset($_POST['filename'])&&!isset($_POST['filedata'])&&!isset($_POST['filesize'])&&!isset($_POST['fileupdate'])){
  
 	die("Invalid upload");
  
  }
+ 
+ // check the file doesn't have PHP in
  
  if(strpos($_POST['filename'],".php")!==FALSE){
  
@@ -37,6 +45,7 @@ if(! wp_verify_nonce($_POST['wpnonce'],"xertesave")){
  
  }
  
+// check the end of the file name string is preview.xml
 
  if(sanitize_file_name(substr($_POST['filename'], strlen($_POST['filename'])-11,12))!=="preview.xml"){
  
@@ -56,6 +65,8 @@ if(! wp_verify_nonce($_POST['wpnonce'],"xertesave")){
 		
 }	
 
+// the file that will be uploaded will be sent to savepath
+
 $savepath = $prepared_dir . str_replace("../","/",$_POST['filename']);
 
 /**
@@ -67,6 +78,8 @@ if(strlen($_POST['filedata'])!=strlen($_POST['filesize'])){
     echo "file has been corrupted<BR>";
    
 }
+
+//the file we are sending via post is only to update an existing file, so the file has to exist already
 
 if(file_exists($savepath)){
 

@@ -41,6 +41,7 @@ switch($file_data['extension']){
 	case "jpeg" :
 	case "swf" : break;
 	default: die("Not valid file type"); break;
+
 }
 
 if(preg_match("/^[A-Za-z0-9\-\_\s,']+\.[A-Za-z][A-Za-z][A-Za-z]$/",$_FILES['Filedata']['name'])){
@@ -69,7 +70,7 @@ if(preg_match("/^[A-Za-z0-9\-\_\s,']+\.[A-Za-z][A-Za-z][A-Za-z]$/",$_FILES['File
 
 		if(move_uploaded_file($_FILES['Filedata']['tmp_name'], $target_dir . "/media/" . sanitize_file_name($_FILES['Filedata']['name']))){
 
-			chmod($target_dir . "/media/" . sanitize_file_name($_FILES['Filedata']['name']),0755);
+			chmod($target_dir . "/media/" . sanitize_file_name($_FILES['Filedata']['name']),0644);
 
 		}else{
 		
