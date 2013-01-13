@@ -58,13 +58,7 @@ if(preg_match("/^[A-Za-z0-9\-\_\s,']+\.[A-Za-z][A-Za-z][A-Za-z]$/",$_FILES['File
 	
 	}		
 
-	$target_dir = $prepared_dir . "/" . str_replace("path=","",str_replace("../","",str_replace("&_wpnonce=" . $_REQUEST['_wpnonce'],"",$_SERVER['QUERY_STRING'])));
-
-	if(strpos($target_dir,"media/")!==FALSE){
-	
-		$target_dir = str_replace("media/","",$target_dir);
-	
-	}
+	$target_dir = $prepared_dir . "/wp-content/uploads/xerte-online/" . $_REQUEST['template_id'];
 	
 	if(is_uploaded_file($_FILES['Filedata']['tmp_name'])){
 

@@ -11,6 +11,7 @@
 	*/
 
 	require_once("xerteonline_editor.php");
+	require_once("xerteonline_ajax.php");
 	require_once("xerteonline_display.php");
 	require_once("xerteonline_shortcode.php");
 	require_once("xerteonline_custompost.php");

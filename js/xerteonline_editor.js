@@ -1,3 +1,29 @@
+function xerte_save(file_data,file_data_length,update,wpnonce,template_id){
+	
+	jQuery(document).ready(function($) {
+
+		var data = {
+			action: 'xerte_save',
+			file_data: file_data,
+			file_data_length: file_data_length,
+			file_update: update,
+			wpnonce:wpnonce,
+			template_id:template_id
+		};
+
+		// since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
+		jQuery.post(ajaxurl, data, function(response) {
+			if(response==""){
+				window.open("../?p=" + template_id + "&preview=true")
+			}else{
+				alert(response);
+			}
+		});
+	});
+	
+
+}
+
 // <![CDATA[  
 jQuery.noConflict();
 jQuery(document).ready(function(){
