@@ -29,6 +29,20 @@ if(sanitize_file_name($_FILES['Filedata']['name'])!=$_FILES['Filedata']['name'])
 
 }
 
+$file_data = pathinfo($_FILES['Filedata']['name']);
+
+switch($file_data['extension']){
+
+	case "flv" :
+	case "mp3" :
+	case "jpg" :
+	case "gif" :
+	case "png" :
+	case "jpeg" :
+	case "swf" : break;
+	default: die("Not valid file type"); break;
+}
+
 if(preg_match("/^[A-Za-z0-9\-\_\s,']+\.[A-Za-z][A-Za-z][A-Za-z]$/",$_FILES['Filedata']['name'])){
 
 	$dir = getcwd();
@@ -43,7 +57,7 @@ if(preg_match("/^[A-Za-z0-9\-\_\s,']+\.[A-Za-z][A-Za-z][A-Za-z]$/",$_FILES['File
 	
 	}		
 
-	$target_dir = $prepared_dir . "/" . str_replace("path=","",str_replace("../","",str_replace("&_wpnonce=1028c4c5b2","",$_SERVER['QUERY_STRING'])));
+	$target_dir = $prepared_dir . "/" . str_replace("path=","",str_replace("../","",str_replace("&_wpnonce=" . $_REQUEST['_wpnonce'],"",$_SERVER['QUERY_STRING'])));
 
 	if(strpos($target_dir,"media/")!==FALSE){
 	
@@ -64,4 +78,3 @@ if(preg_match("/^[A-Za-z0-9\-\_\s,']+\.[A-Za-z][A-Za-z][A-Za-z]$/",$_FILES['File
 	}
 		
 }
-			

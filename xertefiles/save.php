@@ -10,6 +10,14 @@
  */
  
 include "../../../../wp-admin/admin.php";
+
+if(substr(trim($_POST['filedata']),0,15)!="<learningObject"){
+
+	file_put_contents("c:\\xampp\\rrrr.txt", substr(trim($_POST['filedata']),0,15) . "**" .  "<learningObject" . "**"); 
+
+	die("INVALID FILE DATA");
+
+}
  
 if(! wp_verify_nonce($_POST['wpnonce'],"xertesave")){
 	
@@ -29,6 +37,7 @@ if(! wp_verify_nonce($_POST['wpnonce'],"xertesave")){
  
  }
  
+
  if(sanitize_file_name(substr($_POST['filename'], strlen($_POST['filename'])-11,12))!=="preview.xml"){
  
 	die("Not preview.xml");
@@ -90,4 +99,3 @@ if(file_exists($savepath)){
 }
 
 ?>
-
