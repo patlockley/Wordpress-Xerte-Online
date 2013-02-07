@@ -26,7 +26,7 @@
 		
 		$savepath = $upload_dir['basedir'] . "/xerte-online/" . $_POST['template_id'] . "/preview.xml";
 		
-		if($_POST['fileupdate']=="true"){
+		if($_POST['file_update']=="true"){
 
 			$file_handle = fopen(str_replace("preview","data",$savepath),'w');
 

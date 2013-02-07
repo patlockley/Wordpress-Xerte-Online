@@ -3,7 +3,7 @@
 	/*
 	Plugin Name: Xerte Online 
 	Description: Xerte Online Toolkits based in a WordPress site
-	Version: 0.32
+	Version: 0.36
 	Author: pgogy
 	Plugin URI: http://www.pgogy.com/code/xerte-online
 	Author URI: http://www.pgogy.com
@@ -18,6 +18,7 @@
 	require_once("xerteonline_posthandling.php");
 	require_once("xerteonline_management.php");
 	require_once("xerteonline_feed.php");
+	require_once("xerteonline_upload.php");
 	
 	register_activation_hook( __FILE__, 'xerteonline_activate' );
 	
