@@ -16,12 +16,6 @@
 		
 		}
 		
-		if(strlen(stripslashes($_POST['file_data']))!=$_POST['file_data_length']){
-
-			die("file has been corrupted");
-   
-		}
-		
 		$upload_dir = wp_upload_dir();
 		
 		$savepath = $upload_dir['basedir'] . "/xerte-online/" . $_POST['template_id'] . "/preview.xml";

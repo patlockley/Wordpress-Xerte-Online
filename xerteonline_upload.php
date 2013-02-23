@@ -43,7 +43,7 @@
 				default: die("Not valid file type"); break;
 
 			}
-
+				
 			if(preg_match("/^[A-Za-z0-9\-\_\s,']+\.[A-Za-z][A-Za-z][A-Za-z]$/",$_FILES['Filedata']['name'])){
 				
 				if(is_uploaded_file($_FILES['Filedata']['tmp_name'])){
